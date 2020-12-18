@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>June Bill Organizer</title>
+</head>
+<body onload="loadUp()">
+    <section class="center">
+        <div id="head">
+            <p><a href="index.html">January</a></p>
+            <p><a href="index2.html">February</a></p>
+            <p><a href="index3.html">March</a></p>
+            <p><a href="index4.html">April</a></p>
+            <p><a href="index5.html">May</a></p>
+            <p><a href="index6.html">June</a></p>
+            <p><a href="index7.html">July</a></p>
+            <p><a href="index8.html">August</a></p>
+            <p><a href="index9.html">September</a></p>
+            <p><a href="index10.html">October</a></p>
+            <p><a href="index11.html">November</a></p>
+            <p><a href="index12.html">December</a></p>
+        </div> 
+        <div id="currentMonth"><p>June</p></div> 
+        <div id="center">
+            <p>Name</p>
+            <p>Amount</p>
+            <p>Paid?</p>
+            <p>Out of Account?</p>
+            <p>Check Date</p>
+        </div>
+        <div id="bills1">
+            Car
+            <input type="number" id="amount121" pattern="\d*" placeholder="0" onkeyup="add()" onchange="save()">
+            <input type="checkbox" id="paid121" onclick="save()">
+            <input type="checkbox" id="ooa121" onchange="save()" onclick="setToZero()">
+            <input type="date" id="date121" onchange="save()">
+            Cell
+            <input type="number" id="amount122"  pattern="\d*" placeholder="0" onkeyup="add()" onchange="save()">
+            <input type="checkbox" id="paid122" onclick="save()">
+            <input type="checkbox" id="ooa122" onchange="save()" onclick="setToZero()">
+            <input type="date" id="date122" onchange="save()">
+            Electric
+            <input type="number" id="amount123" pattern="\d*" placeholder="0" onkeyup="add()" onchange="save()">
+            <input type="checkbox" id="paid123" onclick="save()">
+            <input type="checkbox" id="ooa123" onchange="save()" onclick="setToZero()">
+            <input type="date" id="date123" onchange="save()">
+            Kohls
+            <input type="number" id="amount124" pattern="\d*" placeholder="0" onkeyup="add()" onchange="save()">
+            <input type="checkbox" id="paid124" onclick="save()">
+            <input type="checkbox" id="ooa124" onchange="save()" onclick="setToZero()">
+            <input type="date" id="date124" onchange="save()">
+            CareCredit
+            <input type="number" id="amount125" pattern="\d*" placeholder="0" onkeyup="add()" onchange="save()">
+            <input type="checkbox" id="paid125" onclick="save()">
+            <input type="checkbox" id="ooa125" onchange="save()" onclick="setToZero()">
+            <input type="date" id="date125" onchange="save()">
+            Kays
+            <input type="number" id="amount126" pattern="\d*" placeholder="0" onkeyup="add()" onchange="save()">
+            <input type="checkbox" id="paid126" onclick="save()">
+            <input type="checkbox" id="ooa126" onchange="save()" onclick="setToZero()">
+            <input type="date" id="date126" onchange="save()">
+            ADT
+            <input type="number" id="amount127" pattern="\d*" placeholder="0" onkeyup="add()" onchange="save()">
+            <input type="checkbox" id="paid127" onclick="save()">
+            <input type="checkbox" id="ooa127" onchange="save()" onclick="setToZero()">
+            <input type="date" id="date127" onchange="save()">
+            Capital
+            <input type="number" id="amount128" pattern="\d*" placeholder="0" onkeyup="add()" onchange="save()">
+            <input type="checkbox" id="paid128" onclick="save()">
+            <input type="checkbox" id="ooa128" onchange="save()" onclick="setToZero()">
+            <input type="date" id="date128" onchange="save()">
+            Merrick
+            <input type="number" id="amount129" pattern="\d*" placeholder="0" onkeyup="add()" onchange="save()">
+            <input type="checkbox" id="paid129" onclick="save()">
+            <input type="checkbox" id="ooa129" onchange="save()" onclick="setToZero()">
+            <input type="date" id="date129" onchange="save()">
+            WalMart
+            <input type="number" id="amount130" pattern="\d*" placeholder="0" onkeyup="add()" onchange="save()">
+            <input type="checkbox" id="paid130" onclick="save()">
+            <input type="checkbox" id="ooa130" onchange="save()" onclick="setToZero()">
+            <input type="date" id="date130" onchange="save()">
+            Sam's
+            <input type="number" id="amount131" pattern="\d*" placeholder="0" onkeyup="add()" onchange="save()">
+            <input type="checkbox" id="paid131" onclick="save()">
+            <input type="checkbox" id="ooa131" onchange="save()" onclick="setToZero()">
+            <input type="date" id="date131" onchange="save()">
+            Total
+            <input type="number" id="bills11Total" placeholder="0" onchange="add()"> 
+        </div>
+        <div class="notes">
+            <textarea id="notes11" rows="6" cols="70" onchange="save()"></textarea>
+        </div>
+        <div id="bills2">
+            House
+            <input type="number" id="amount132" pattern="\d*" placeholder="0" onkeyup="add2()" onchange="save()">
+            <input type="checkbox" id="paid132" onclick="save()">
+            <input type="checkbox" id="ooa132" onchange="save()" onclick="setToZero()">
+            <input type="date" id="date132" onchange="save()">
+            Cable
+            <input type="number" id="amount133" pattern="\d*" placeholder="0" onkeyup="add2()" onchange="save()">
+            <input type="checkbox" id="paid133" onclick="save()">
+            <input type="checkbox" id="ooa133" onchange="save()" onclick="setToZero()">
+            <input type="date" id="date133" onchange="save()">
+            Trash
+            <input type="number" id="amount134" pattern="\d*" placeholder="0" onkeyup="add2()" onchange="save()">
+            <input type="checkbox" id="paid134" onclick="save()">
+            <input type="checkbox" id="ooa134" onchange="save()" onclick="setToZero()">
+            <input type="date" id="date134" onchange="save()">
+            Water
+            <input type="number" id="amount135" pattern="\d*" placeholder="0" onkeyup="add2()" onchange="save()">
+            <input type="checkbox" id="paid135" onclick="save()">
+            <input type="checkbox" id="ooa135" onchange="save()" onclick="setToZero()">
+            <input type="date" id="date135" onchange="save()">
+            Mid
+            <input type="number" id="amount136" pattern="\d*" placeholder="0" onkeyup="add2()" onchange="save()">
+            <input type="checkbox" id="paid136" onclick="save()">
+            <input type="checkbox" id="ooa136" onchange="save()" onclick="setToZero()">
+            <input type="date" id="date136" onchange="save()">
+            Xpress
+            <input type="number" id="amount137" pattern="\d*" placeholder="0" onkeyup="add2()" onchange="save()">
+            <input type="checkbox" id="paid137" onclick="save()">
+            <input type="checkbox" id="ooa137" onchange="save()" onclick="setToZero()">
+            <input type="date" id="date137" onchange="save()">
+            School
+            <input type="number" id="amount138" pattern="\d*" placeholder="0" onkeyup="add2()" onchange="save()">
+            <input type="checkbox" id="paid138" onclick="save()">
+            <input type="checkbox" id="ooa138" onchange="save()" onclick="setToZero()">
+            <input type="date" id="date138" onchange="save()">
+            Hulu
+            <input type="number" id="amount139" pattern="\d*" placeholder="0" onkeyup="add2()" onchange="save()">
+            <input type="checkbox" id="paid139" onclick="save()">
+            <input type="checkbox" id="ooa139" onchange="save()" onclick="setToZero()">
+            <input type="date" id="date139" onchange="save()">
+            Credit One
+            <input type="number" id="amount140" pattern="\d*" placeholder="0" onkeyup="add2()" onchange="save()">
+            <input type="checkbox" id="paid140" onclick="save()">
+            <input type="checkbox" id="ooa140" onchange="save()" onclick="setToZero()">
+            <input type="date" id="date140" onchange="save()">
+            Affirm
+            <input type="number" id="amount141" pattern="\d*" placeholder="0" onkeyup="add2()" onchange="save()">
+            <input type="checkbox" id="paid141" onclick="save()">
+            <input type="checkbox" id="ooa141" onchange="save()" onclick="setToZero()">
+            <input type="date" id="date141" onchange="save()">
+            Freeman
+            <input type="number" id="amount142" pattern="\d*" placeholder="0" onkeyup="add2()" onchange="save()">
+            <input type="checkbox" id="paid142" onclick="save()">
+            <input type="checkbox" id="ooa142" onchange="save()" onclick="setToZero()">
+            <input type="date" id="date142" onchange="save()">
+            Avant
+            <input type="number" id="amount143" pattern="\d*" placeholder="0" onkeyup="add2()" onchange="save()">
+            <input type="checkbox" id="paid143" onclick="save()">
+            <input type="checkbox" id="ooa143" onchange="save()" onclick="setToZero()">
+            <input type="date" id="date143" onchange="save()">
+            Warcraft
+            <input type="number" id="amount144" pattern="\d*" placeholder="0" onkeyup="add2()" onchange="save()">
+            <input type="checkbox" id="paid144" onclick="save()">
+            <input type="checkbox" id="ooa144" onchange="save()" onclick="setToZero()">
+            <input type="date" id="date144" onchange="save()">
+            Total
+            <input type="number" id="bills12Total" placeholder="0" onchange="add2()">
+        </div>
+        <div class="notes2">
+            <textarea id="notes12" rows="6" cols="70" onchange="save()"></textarea>
+        </div>    
+    </section>
+    <script src="main6.js"></script>
+</body>
+</html>

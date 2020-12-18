@@ -16,38 +16,32 @@ body {
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
     justify-items: center;
-
 }
 #head {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
     justify-items: center;
-    padding-bottom: 10px;
+    row-gap: 5px;
+    column-gap: 5px;
 }
-select {
-    width: 100px;
-    height: 30px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+#currentMonth {
+    display: flex;
+    justify-content: center;
 }
 #bills1 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    padding-top: 10px; 
     align-items: center;
     justify-items: center;
-
+    row-gap: 10px;
 }
 #bills2 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
- 
     align-items: center;
     justify-items: center;
-
-}
-span {
-    padding-top: 5px;
+    row-gap: 10px;
 }
 .notes {
     display: flex;
@@ -58,6 +52,12 @@ span {
     display: flex;
     justify-content: center;
     padding: 10px;
+}
+input[type=text] {
+    width: 6em;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: capitalize;
 }
 input[type=date] {
     width: auto;
